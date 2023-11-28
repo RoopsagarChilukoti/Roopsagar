@@ -1,7 +1,7 @@
-# Count repeated words from string.
+#  Count repeated words from string.
+
 s = 'I am hungry and I also mad'
 words = s.split()
-
 wordcounter = {}
 for word in words:
     if not word in wordcounter:
@@ -9,3 +9,14 @@ for word in words:
     else:
         wordcounter[word] = wordcounter[word] + 1
 print(wordcounter)
+
+
+#  Count total vowels from given list
+
+text = 'programming is fun'
+vowels = 'aeiouAEIOU'
+count = 0
+for let in text:
+    if let in vowels:
+        count = count+1
+print(count)
