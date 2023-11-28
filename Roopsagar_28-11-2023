@@ -1,0 +1,11 @@
+# Count repeated words from string.
+s = 'I am hungry and I also mad'
+words = s.split()
+
+wordcounter = {}
+for word in words:
+    if not word in wordcounter:
+        wordcounter[word] = 1
+    else:
+        wordcounter[word] = wordcounter[word] + 1
+print(wordcounter)
